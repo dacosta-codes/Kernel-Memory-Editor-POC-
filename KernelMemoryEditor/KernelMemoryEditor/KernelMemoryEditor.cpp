@@ -113,6 +113,11 @@ bool MemCopy(uintptr_t source, uintptr_t destination, uintptr_t length) {
 int main()
 {
 	int example_value_source = 10;
-	system("pause");
+	int example_value_destination;
+	MemCopy((uintptr_t)&example_value_source, (uintptr_t)&example_value_destination, sizeof(example_value_source));
+	std::cout << example_value_destination << std::endl;
+	
+	system("pause"); //Pause to allow for debugging
 }
+
 
