@@ -112,5 +112,7 @@ bool MemCopy(uintptr_t source, uintptr_t destination, uintptr_t length) {
 
 int main()
 {
+	int example_value_source = 10;
 	system("pause");
 }
+
